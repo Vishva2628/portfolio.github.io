@@ -470,7 +470,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding: 40px 0;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -479,7 +479,7 @@ h6 {
 }
 
 .footer .social-links {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .footer .social-links a {
@@ -750,7 +750,17 @@ section,
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
 }
-
+.mob-img{
+  display: none!important;
+}
+@media (max-width: 912px) {
+  .desk-img{
+    display: none;
+  }
+  .mob-img{
+    display: block!important;
+  }
+}
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -758,6 +768,9 @@ section,
 
   .hero p {
     font-size: 18px;
+  }
+  section, .section{
+    padding: 30px 0;
   }
 }
 
